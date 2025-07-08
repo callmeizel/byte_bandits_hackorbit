@@ -1,0 +1,204 @@
+/* TechTutor.css – Premium Colorful Theme with Switch Assistant */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #ffe4f6);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.smartbot-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.dot-ai {
+  color: #d946ef;
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+.assistant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.assistant-card {
+  background: linear-gradient(to top right, #f3e8ff, #e0f2fe);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem;
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.assistant-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.assistant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.assistant-card p {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 1rem;
+}
+
+.chat-section {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.model-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  background: linear-gradient(to right, #fbcfe8, #c084fc);
+  border: none;
+  border-radius: 999px;
+  color: #6b21a8;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.model-btn:hover {
+  background: linear-gradient(to right, #e879f9, #a78bfa);
+  color: white;
+  transform: scale(1.05);
+}
+
+.chat-box {
+  max-height: 350px;
+  overflow-y: auto;
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  scroll-behavior: smooth;
+}
+
+.chat-message {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 1.5rem;
+  max-width: 75%;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.chat-message.user .chat-bubble {
+  background: #dbeafe;
+  color: #1e3a8a;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.chat-message.bot .chat-bubble {
+  background: #fce7f3;
+  color: #9d174d;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+.chat-input-area {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+}
+
+.chat-input-area input {
+  flex: 1;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.send-btn {
+  border: none;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.send-btn:hover {
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}

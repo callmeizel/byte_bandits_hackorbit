@@ -1,0 +1,117 @@
+/* Signup.css – Premium Colorful Form Design with Success Animation */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #fef9ff, #e0f2fe);
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.signup-form {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.signup-form.fade-out {
+  opacity: 0.3;
+  transform: scale(0.98);
+}
+
+.signup-form h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #7c3aed;
+  text-align: center;
+}
+
+.signup-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+}
+
+.signup-form button {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to right, #f472b6, #c084fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.25);
+}
+
+.signup-form button:hover {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  transform: translateY(-1px);
+}
+
+/* Success Message */
+.signup-success {
+  position: absolute;
+  top: 5%;
+  background: linear-gradient(135deg, #38f9d7, #43e97b);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeSlideDown 0.4s ease-out;
+  z-index: 10;
+  width: 100%;
+  max-width: 360px;
+}
+
+.signup-success .checkmark {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  animation: pop 0.4s ease-out;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
