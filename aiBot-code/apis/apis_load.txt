@@ -1,0 +1,4 @@
+uvicorn studybuddy_api:app --port 8060 --reload
+uvicorn techbuddy_api:app --port 8080 --reload 
+uvicorn codemate_api:app --port 8010 --reload 
+uvicorn projectpal_api:app --port 8110 --reload 

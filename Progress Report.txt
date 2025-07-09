@@ -5,4 +5,7 @@ Checkpoint 2.00 pm - prototype 1 of platform ui completed.
 checkpoint 4.00 pm - No relevant update.
 checkpoint 6.00pm - no significant update.
 
-pre checkpoint 10.00 - Added chatbot modes and their early versions
+pre checkpoint 10.00am - Added chatbot modes and their early versions
+checkpoint 1,2,3,4,5 - Added all the remaining part like finalized bots versions and etc. Final integration left.
+
+
