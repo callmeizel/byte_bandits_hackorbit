@@ -6,14 +6,13 @@ client = OpenAI(
         base_url = "https://models.github.ai/inference"
 )
 
-
 def project_pal():
     
     recent_messages = [] #to have a memory for previous chats
     
     conversation_summary = ""
     
-    print("chatbot : Hey Mate! myself Study-buddy. How can I help you?")
+    print("chatbot : Hello Buddy! I'll be your partner in any project. Call me Project-Pal How can I help you?")
     
     while True:
         
@@ -25,22 +24,26 @@ def project_pal():
             try:
                 response = client.chat.completions.create(
                     model = "openai/gpt-4.1-mini"   ,
-                    messages = [
+                    messages = [{
+                                    'role':'system',
+                                    'content' : "You a chatbot named 'Project-Pal'"
+                                },
                         {
                             'role':'system',
-                            'content':'''As an expert Teacher on various different subjects, Answer questions accurately and in begininner friendly language,
+                            'content':'''As an experienced Project Developer, Help the user to develop the project step by step, as efficiently and as easily as possible 
+                                    while keeping in mind 'user' understand everything and with begininner friendly explanation,
                                     The user will enter the queries in following format :
                                     
                                     <I wanted to know...>
                                     
-                                    You should reply as :
+                                    if above format followed then You should reply as:
                                     
-                                    <According to my years of experience...> excluding the less and greater then sign.''' 
+                                    <Well we can begin by...> excluding the less and greater then sign.''' 
                         },
                         {
                             'role': 'system',
                             'content': f'''The Output should be in following Format <exclude using the signs in the final output> and 
-                                            <not use 'criterias' as output instead as rules to follow for what to print in output:-
+                                             <not use or print 'criterias' as output instead follow what it contains for what to print in output>:
                                             
                                         [Question] : <main question asked by the user in {prompt}>
                                         [Answer] : <answer of the question>
