@@ -6,10 +6,14 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav-wrapper">
-        <div className="nav-logo">SmartBot<span>.AI</span></div>
+        <NavLink to="/" className="nav-logo">
+          SmartBot<span>.AI</span>
+        </NavLink>
         <div className="auth-buttons">
-          <NavLink to="/signin" className="nav-auth-button">Sign in</NavLink>
-          <NavLink to="/signup" className="nav-auth-button">Sign up</NavLink>
+          <NavLink to="/" className="nav-auth-button">Home</NavLink>
+          <NavLink to="/login" className="nav-auth-button">Login</NavLink>
+          <NavLink to="/signup" className="nav-auth-button signup-button">Sign up</NavLink>
+
         </div>
       </div>
     </nav>

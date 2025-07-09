@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Signup.css';
+import '../styles/login.css';
 
-const Signup = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     password: ''
   });
@@ -18,9 +17,9 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Signup submitted:', formData);
+    console.log('Login submitted:', formData);
     setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 4000); // Hide after 4s
+    setTimeout(() => setIsSubmitted(false), 4000);
   };
 
   useEffect(() => {
@@ -31,25 +30,16 @@ const Signup = () => {
   }, []);
 
   return (
-    <div className="signup-container">
+    <div className="login-container">
       {isSubmitted && (
-        <div className="signup-success">
+        <div className="login-success">
           <div className="checkmark">✓</div>
-          <p>Account created successfully!</p>
+          <p>Logged in successfully!</p>
         </div>
       )}
 
-      <form className={`signup-form ${isSubmitted ? 'fade-out' : ''}`} onSubmit={handleSubmit}>
-        <h2>Create Account</h2>
-
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+      <form className={`login-form ${isSubmitted ? 'fade-out' : ''}`} onSubmit={handleSubmit} style={{ margin: '0 auto' }}>
+        <h2>Login to Account</h2>
 
         <input
           type="email"
@@ -69,10 +59,10 @@ const Signup = () => {
           required
         />
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 };
 
-export default Signup;
+export default Login;
