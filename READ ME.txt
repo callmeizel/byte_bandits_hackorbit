@@ -1,1 +1,52 @@
 //SmartBot.ai\\
+
+Work by having four domain-specific AI chatbots into a single webpage using FastAPI backend APIs. Each chatbot is designed with a unique personality and functional role, responding to user prompts in real-time using streamed responses.
+
+------------
+How to use
+-------------
+
+- Can access main site through the deployed site attached on the 'GitHub repo'
+
+----------------
+Further Use Case:
+----------------
+
+- Can even go for 'CONSOLE BASE TEST' address 'aiBot-code\projectpal,codemate,studybuddy,techbuddy.py' can run then for console experience.
+
+-----------------
+Included Chatbots:
+-----------------
+
+CodeMate – Programming assistant for writing and explaining code.
+
+2. ProjectPal – Guides users in developing full software projects.
+
+3. StudyBuddy – Educational mentor for school-level doubts and topics.
+
+4. TechBuddy – Technical expert for engineering and tech-related queries.
+
+-----------
+Tech Stack:
+------------
+
+- Python
+
+- OpenAI API (api key for chatbot integration)
+
+- Frontend (React Framework)
+
+- API (FastAPI)
+
+---------
+Credits:
+---------
+
+- Icons and images used in this project were obtained from
+  copyright-free stock photo websites.
+
+- API keys used for accessing AI models were generated via
+  'GitHub Models' and are not proprietary to this project.
+
+- Few snippets of code are made by getting guidance and assistance
+  from OpenAI ChatGPT.
