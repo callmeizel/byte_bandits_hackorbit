@@ -1,11 +1,9 @@
 from openai import OpenAI, AuthenticationError, APIError
 
-# key - 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
-# gpt4o key - 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
-
+# OpenAI SDK used here
 
 client = OpenAI(
-        api_key = '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',
+        api_key = 'none', # no key here for Safety purpose and fullfilling the Github guidelines.
         base_url = "https://models.github.ai/inference",
 )
 
