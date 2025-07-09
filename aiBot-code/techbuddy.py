@@ -1,8 +1,7 @@
 from openai import OpenAI, AuthenticationError, APIError
 
-
 client = OpenAI(
-        api_key = 'none', # no key to full GitHub guidelines and also for safety of the api key.
+        api_key = 'none', # no key added here to follow the Github guidelines and safety precautions
         base_url = "https://models.github.ai/inference"
 )
 
